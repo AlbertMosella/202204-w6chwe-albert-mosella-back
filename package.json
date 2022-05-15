@@ -6,11 +6,13 @@
   "scripts": {
     "prepare": "husky install",
     "start": "node index",
+    "test-coverage": "npm run test -- --coverage --watchAll=false",
     "test": "jest --watchAll"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^27.5.1",
     "eslint": "^8.15.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
