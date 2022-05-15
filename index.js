@@ -13,6 +13,6 @@ const dbUrl = process.env.ROBOT_DB;
     await connectDataBase(dbUrl);
     await initializeServer(port, app);
   } catch (error) {
-    debug(chalk.error(`General Pete:`, error.message));
+    debug(chalk.red(`General Pete:`, error.message));
   }
 })();
